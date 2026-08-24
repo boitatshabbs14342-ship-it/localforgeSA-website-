@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>LocalForge | Local SEO & Growth Engine South Africa</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <!-- Clean, Fixed Navigation Header -->
+  <header class="navbar">
+    <div class="logo">
+      <span class="logo-icon">🔥</span>
+      <span class="logo-text">Local<strong>Forge</strong></span>
+    </div>
+    
+    <div class="header-actions">
+      <a href="#audit" class="btn-header-primary">Free Audit</a>
+    </div>
+  </header>
+
+  <main>
+    <!-- Hero Section -->
+    <section class="hero-section">
+      <div class="badge">
+        <span>🇿🇦 South Africa's #1 Local 3-Pack Growth Engine</span>
+      </div>
+      
+      <h1>Forge Your Local Search Presence & <span class="highlight">Dominate The Google 3-Pack</span></h1>
+      
+      <p class="hero-subtext">
+        When high-intent customers in your suburb search for your services nearby, you either rank in the top 3 on Google Maps, or your competitor takes the call. We optimize your Google Business Profile, expand ranking radius across South African suburbs, and automate 5-star WhatsApp reviews.
+      </p>
+
+      <div class="hero-cta-group">
+        <a href="#audit" class="btn-primary">Run 3-Step Instant Audit &rarr;</a>
+        <a href="https://wa.me/27825833674?text=Hi%20LocalForge,%20I'd%20like%20to%20audit%20my%20business" target="_blank" class="btn-whatsapp">
+          <span class="wa-icon">💬</span> Chat on WhatsApp
+        </a>
+      </div>
+    </section>
+
+    <!-- Interactive 3-Step Audit Widget -->
+    <section id="audit" class="audit-section">
+      <div class="section-header">
+        <h2>Visual Local SEO Audit Dashboard</h2>
+        <p>Check your suburb visibility score in under 60 seconds</p>
+      </div>
+
+      <div class="audit-card">
+        <form id="audit-form" onsubmit="event.preventDefault(); runAudit();">
+          <div class="form-group">
+            <label for="biz-name">Business Name</label>
+            <input type="text" id="biz-name" placeholder="e.g. Gauteng Auto Works" required>
+          </div>
+
+          <div class="form-group">
+            <label for="suburb">Suburb / City</label>
+            <input type="text" id="suburb" placeholder="e.g. Johannesburg, Sandton, Durban" required>
+          </div>
+
+          <div class="form-group">
+            <label for="biz-type">Business Category</label>
+            <select id="biz-type" required>
+              <option value="">Select Category...</option>
+              <option value="auto">Auto Repair & Services</option>
+              <option value="plumbing">Plumbing & Electrical</option>
+              <option value="medical">Medical & Dental Practice</option>
+              <option value="salon">Salon & Wellness</option>
+              <option value="restaurant">Cafe & Restaurant</option>
+              <option value="legal">Legal & Professional Services</option>
+            </select>
+          </div>
+
+          <button type="submit" class="btn-primary full-width">Generate Audit Breakdown</button>
+        </form>
+
+        <div id="audit-results" class="audit-results hidden">
+          <div class="score-card">
+            <h4>Google Maps 3-Pack Score</h4>
+            <div class="score-gauge">78 / 100</div>
+          </div>
+          <div class="metrics-grid">
+            <div class="metric-box">
+              <span class="label">Maps Ranking Radius</span>
+              <span class="value">5 km</span>
+            </div>
+            <div class="metric-box">
+              <span class="label">Review Velocity Target</span>
+              <span class="value">+12 reviews/mo</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- South African Pricing Packages -->
+    <section class="pricing-section">
+      <div class="section-header">
+        <h2>Transparent ZAR Pricing</h2>
+        <p>Built specifically for South African physical businesses</p>
+      </div>
+
+      <div class="pricing-grid">
+        <div class="price-card">
+          <h3>Local Starter</h3>
+          <div class="price">R3,499 <span>/mo</span></div>
+          <p class="price-desc">Suburb Dominance</p>
+          <ul>
+            <li>✓ Google Business Profile Optimization</li>
+            <li>✓ Local Citation Building (Brabys, YellowPages SA)</li>
+            <li>✓ Single Suburb Radius Expansion</li>
+          </ul>
+          <a href="https://wa.me/27825833674?text=Interested%20in%20Local%20Starter%20Package" class="btn-secondary">Get Started</a>
+        </div>
+
+        <div class="price-card featured">
+          <div class="popular-tag">Most Popular</div>
+          <h3>Business Growth</h3>
+          <div class="price">R6,999 <span>/mo</span></div>
+          <p class="price-desc">Reputation Growth</p>
+          <ul>
+            <li>✓ Everything in Starter</li>
+            <li>✓ Automated WhatsApp 5-Star Review Engine</li>
+            <li>✓ Multi-Suburb Local Pack Expansion</li>
+            <li>✓ Monthly Rank Tracking & Reporting</li>
+          </ul>
+          <a href="https://wa.me/27825833674?text=Interested%20in%20Business%20Growth%20Package" class="btn-primary">Get Started</a>
+        </div>
+
+        <div class="price-card">
+          <h3>Market Leader</h3>
+          <div class="price">R12,999 <span>/mo</span></div>
+          <p class="price-desc">Execution Growth</p>
+          <ul>
+            <li>✓ Full Metro/Regional Dominance</li>
+            <li>✓ High-Authority Local Link Building</li>
+            <li>✓ Technical On-Page SEO & Schema Markup</li>
+            <li>✓ Dedicated Local Growth Strategist</li>
+          </ul>
+          <a href="https://wa.me/27825833674?text=Interested%20in%20Market%20Leader%20Package" class="btn-secondary">Get Started</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Floating Mobile WhatsApp CTA Button -->
+  <a href="https://wa.me/27825833674?text=Hi%20LocalForge,%20I'd%20like%20to%20audit%20my%20business" class="floating-wa" target="_blank" aria-label="Chat on WhatsApp">
+    💬
+  </a>
+
+  <script src="main.js"></script>
+</body>
+</html>
