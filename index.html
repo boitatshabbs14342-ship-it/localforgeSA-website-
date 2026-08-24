@@ -1,0 +1,866 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>LocalForge | Local SEO & Google Maps Domination for South African Businesses</title>
+  <meta name="description" content="Dominate local Google Search and Google Maps across South Africa. LocalForge empowers brick-and-mortar storefronts, clinics, and contractors to rank #1 in the Local 3-Pack.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Space+Grotesk:wght@600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Sticky Navigation Header -->
+  <header id="main-header" class="site-header">
+    <div class="container header-container">
+      <a href="#" class="brand-logo">
+        <div class="logo-icon">🔥</div>
+        <div class="logo-text">
+          <span class="brand-name">Local<span class="accent-color">Forge</span></span>
+          <span class="brand-tagline">Local SEO • South Africa</span>
+        </div>
+      </a>
+
+      <nav class="desktop-nav">
+        <a href="#audit-widget">Instant Audit</a>
+        <a href="#services">Services</a>
+        <a href="#roi-calculator">ZAR ROI Calculator</a>
+        <a href="#case-studies">Case Studies</a>
+        <a href="#pricing">Pricing</a>
+        <a href="#faq">FAQ</a>
+      </nav>
+
+      <div class="header-actions">
+        <a href="https://wa.me/27825833674?text=Hi%20LocalForge,%20I'd%20like%20to%20audit%20my%20business" target="_blank" rel="noopener noreferrer" class="whatsapp-nav-btn">
+          <span class="wa-icon">💬</span>
+          <span>WhatsApp Us</span>
+        </a>
+        <a href="tel:+27825833674" class="phone-link">📞 +27 82 583 3674</a>
+        <a href="#audit-widget" class="btn btn-primary btn-sm">Free Audit</a>
+        <button id="mobile-menu-btn" class="mobile-toggle" aria-label="Toggle Navigation">☰</button>
+      </div>
+    </div>
+
+    <!-- Mobile Drawer -->
+    <div id="mobile-nav" class="mobile-nav-drawer hidden">
+      <a href="#audit-widget" class="mobile-link">Instant Audit</a>
+      <a href="#services" class="mobile-link">Services</a>
+      <a href="#roi-calculator" class="mobile-link">ZAR ROI Calculator</a>
+      <a href="#case-studies" class="mobile-link">Case Studies</a>
+      <a href="#pricing" class="mobile-link">Pricing</a>
+      <a href="#faq" class="mobile-link">FAQ</a>
+      <a href="https://wa.me/27825833674?text=Hi%20LocalForge,%20I'd%20like%20to%20audit%20my%20business" target="_blank" rel="noopener noreferrer" class="btn btn-whatsapp w-full">Chat on WhatsApp</a>
+      <a href="tel:+27825833674" class="btn btn-secondary w-full">Call +27 82 583 3674</a>
+      <a href="#audit-widget" class="btn btn-primary w-full">Get Free Audit</a>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero-section">
+    <div class="container hero-grid">
+      
+      <!-- Hero Left -->
+      <div class="hero-content">
+        <div class="badge-pill">
+          <span class="pulse-dot"></span>
+          <span>🇿🇦 South Africa's #1 Local 3-Pack Growth Engine</span>
+        </div>
+
+        <h1 class="hero-title">
+          Forge Your Local Search Presence & <span class="accent-gradient">Dominate The Google 3-Pack</span>
+        </h1>
+
+        <p class="hero-subtitle">
+          When high-intent customers in your suburb search for your services nearby, you either rank in the top 3 on Google Maps, or your competitor takes the call. We optimize your Google Business Profile, expand ranking radius across South African suburbs, and automate 5-star WhatsApp reviews.
+        </p>
+
+        <div class="hero-cta-group">
+          <a href="#audit-widget" class="btn btn-primary btn-lg">Run 3-Step Instant Audit →</a>
+          <a href="https://wa.me/27825833674?text=Hi%20LocalForge,%20I'd%20like%20to%20audit%20my%20business" target="_blank" rel="noopener noreferrer" class="btn btn-whatsapp btn-lg">
+            <span class="wa-icon">💬</span>
+            <span>Chat on WhatsApp</span>
+          </a>
+        </div>
+
+        <div class="trust-checks">
+          <span>✓ ZAR Pricing Transparent</span>
+          <span>✓ Instant 3-Step Scan</span>
+          <span>✓ Single-Market Exclusivity</span>
+        </div>
+      </div>
+
+      <!-- Hero Right: Interactive 3-Pack Simulator -->
+      <div class="hero-mockup">
+        <div class="mockup-card">
+          <div class="mockup-header">
+            <div>
+              <div class="mockup-title">Google Local 3-Pack Simulator</div>
+              <div class="mockup-sub">Search: "emergency plumber near Sandton"</div>
+            </div>
+            <div class="toggle-group">
+              <button id="toggle-before-btn" class="toggle-btn">Before</button>
+              <button id="toggle-after-btn" class="toggle-btn active">After LocalForge</button>
+            </div>
+          </div>
+
+          <div id="mockup-body" class="mockup-body">
+            <!-- Simulated After Card -->
+            <div class="rank-card rank-1-card">
+              <div class="rank-badge">#1 Rank in Suburb</div>
+              <div class="rank-card-header">
+                <strong>Sandton Emergency Plumbing</strong>
+                <span class="verified-tag">✓ Verified GBP</span>
+              </div>
+              <div class="star-rating">
+                <span class="stars">★★★★★</span>
+                <span class="score">4.9 (248 reviews)</span>
+              </div>
+              <div class="meta-line">📍 Plumber • Open 24/7 • Sandton, JHB (0.8 km)</div>
+              <div class="rank-tags">
+                <span class="tag-accent">📞 Call: +284% Inbound Volume</span>
+                <span class="tag-muted">WhatsApp Review Funnel</span>
+              </div>
+            </div>
+
+            <div class="rank-card rank-dim">
+              <div class="flex-between">
+                <span>#2 Central Drain Co</span>
+                <span>4.3 ★ (84 reviews)</span>
+              </div>
+              <div class="meta-line">Plumbing • Closes 5PM • 1.4 km</div>
+            </div>
+
+            <div class="rank-card rank-dim">
+              <div class="flex-between">
+                <span>#3 Gauteng Plumbing Works</span>
+                <span>4.1 ★ (32 reviews)</span>
+              </div>
+              <div class="meta-line">Emergency Plumber • 2.8 km away</div>
+            </div>
+          </div>
+
+          <div class="mockup-footer">
+            <span>📈 Google 3-Pack captures <strong>74%+</strong> of all mobile search calls</span>
+            <a href="#audit-widget" class="accent-link">Audit My Suburb Rank →</a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Stats & Proof Bar -->
+  <section class="stats-section">
+    <div class="container stats-grid">
+      <div class="stat-card">
+        <div class="stat-num">+318%</div>
+        <div class="stat-label">Avg. Inbound Google Calls</div>
+        <div class="stat-sub">Across 90-day suburb rollouts</div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-num">#1 - #3</div>
+        <div class="stat-label">Google 3-Pack Placement</div>
+        <div class="stat-sub">Johannesburg, CT & Durban</div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-num">4.9 ★</div>
+        <div class="stat-label">Client Review Rating</div>
+        <div class="stat-sub">14,800+ 5-star customer reviews</div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-num">100%</div>
+        <div class="stat-label">Brick-and-Mortar Focus</div>
+        <div class="stat-sub">Clinics, auto shops & services</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 3-STEP INSTANT AUDIT CHECKLIST WIDGET -->
+  <section id="audit-widget" class="section audit-widget-section">
+    <div class="container">
+      <div class="section-header">
+        <div class="badge-pill">⚡ 3-Step Instant Local Diagnostic</div>
+        <h2 class="section-title">Live Google Maps Audit for <span class="accent-color">South African Businesses</span></h2>
+        <p class="section-subtitle">Simulate real-time ranking proximity, South African directory sync (Brabys, Yellow Pages SA), and WhatsApp review velocity.</p>
+      </div>
+
+      <div class="audit-widget-card">
+        <!-- Step Navigation Progress Bar -->
+        <div class="widget-steps-bar">
+          <button id="step-tab-1" class="step-tab active" onclick="goToAuditStep(1)">
+            <span class="step-num">1</span>
+            <span>1. Business & Suburb</span>
+          </button>
+          <span class="step-arrow">→</span>
+          <button id="step-tab-2" class="step-tab" onclick="goToAuditStep(2)">
+            <span class="step-num">2</span>
+            <span>2. Industry Type</span>
+          </button>
+          <span class="step-arrow">→</span>
+          <button id="step-tab-3" class="step-tab" onclick="goToAuditStep(3)">
+            <span class="step-num">3</span>
+            <span>3. Visual Breakdown</span>
+          </button>
+        </div>
+
+        <!-- STEP 1 CONTENT -->
+        <div id="audit-step-1" class="audit-step-panel">
+          <div class="panel-header">
+            <h3>Step 1: Enter Business Name & South African Suburb</h3>
+            <p>We'll simulate live Google Maps proximity signals and South African directory indexes.</p>
+          </div>
+
+          <div class="grid-2 gap-4 my-4">
+            <div class="form-group">
+              <label for="step1-biz-name">Business Storefront / Practice Name *</label>
+              <input type="text" id="step1-biz-name" value="Gauteng Auto Works" placeholder="e.g. Gauteng Auto Works, Sandton Plumbing, Coastal Coffee">
+            </div>
+            <div class="form-group">
+              <label for="step1-suburb">Suburb / City (South Africa) *</label>
+              <input type="text" id="step1-suburb" value="Sandton, Johannesburg" placeholder="e.g. Sandton, Cape Town CBD, Durban North, Pretoria East">
+            </div>
+          </div>
+
+          <div class="popular-suburbs-box">
+            <span class="suburbs-label">Popular South African Hubs:</span>
+            <div class="suburb-pills">
+              <button type="button" class="suburb-pill" onclick="selectSuburb('Sandton, Johannesburg')">Sandton (JHB)</button>
+              <button type="button" class="suburb-pill" onclick="selectSuburb('Cape Town CBD, Cape Town')">Cape Town CBD</button>
+              <button type="button" class="suburb-pill" onclick="selectSuburb('Durban North, Durban')">Durban North</button>
+              <button type="button" class="suburb-pill" onclick="selectSuburb('Pretoria East, Pretoria')">Pretoria East</button>
+              <button type="button" class="suburb-pill" onclick="selectSuburb('Umhlanga, Durban')">Umhlanga</button>
+              <button type="button" class="suburb-pill" onclick="selectSuburb('Centurion, Gauteng')">Centurion</button>
+            </div>
+          </div>
+
+          <div class="step-actions mt-6">
+            <div class="trust-mini">🛡️ 100% Free • No registration or card required</div>
+            <button type="button" class="btn btn-primary" onclick="goToAuditStep(2)">Next: Select Business Type →</button>
+          </div>
+        </div>
+
+        <!-- STEP 2 CONTENT -->
+        <div id="audit-step-2" class="audit-step-panel hidden">
+          <div class="panel-header">
+            <h3>Step 2: Select Your Business Type / Industry</h3>
+            <p>Auditing <strong id="step2-biz-preview" class="accent-color">Gauteng Auto Works</strong> in <strong id="step2-suburb-preview" class="text-white">Sandton, Johannesburg</strong>.</p>
+          </div>
+
+          <div class="industry-grid my-4">
+            <button type="button" class="industry-btn active" data-type="auto" onclick="selectIndustry('auto', this)">
+              <span class="ind-icon">🚗</span>
+              <div class="ind-info">
+                <strong>Auto Shop / Panel Beater</strong>
+                <span>e.g. Gauteng Auto Works</span>
+              </div>
+            </button>
+
+            <button type="button" class="industry-btn" data-type="plumbing" onclick="selectIndustry('plumbing', this)">
+              <span class="ind-icon">🔧</span>
+              <div class="ind-info">
+                <strong>Plumbing & Home Services</strong>
+                <span>e.g. Sandton Emergency Plumbing</span>
+              </div>
+            </button>
+
+            <button type="button" class="industry-btn" data-type="restaurant" onclick="selectIndustry('restaurant', this)">
+              <span class="ind-icon">☕</span>
+              <div class="ind-info">
+                <strong>Restaurant / Coffee Shop</strong>
+                <span>e.g. Coastal Coffee</span>
+              </div>
+            </button>
+
+            <button type="button" class="industry-btn" data-type="medical" onclick="selectIndustry('medical', this)">
+              <span class="ind-icon">🩺</span>
+              <div class="ind-info">
+                <strong>Medical / Dental Practice</strong>
+                <span>e.g. Menlyn Aesthetic Dental</span>
+              </div>
+            </button>
+
+            <button type="button" class="industry-btn" data-type="salon" onclick="selectIndustry('salon', this)">
+              <span class="ind-icon">✂️</span>
+              <div class="ind-info">
+                <strong>Salon & Wellness Spa</strong>
+                <span>e.g. Cape Point Wellness</span>
+              </div>
+            </button>
+
+            <button type="button" class="industry-btn" data-type="solar" onclick="selectIndustry('solar', this)">
+              <span class="ind-icon">☀️</span>
+              <div class="ind-info">
+                <strong>Solar PV & Backup Power</strong>
+                <span>e.g. Highveld Solar Systems</span>
+              </div>
+            </button>
+
+            <button type="button" class="industry-btn" data-type="legal" onclick="selectIndustry('legal', this)">
+              <span class="ind-icon">⚖️</span>
+              <div class="ind-info">
+                <strong>Legal & Professional</strong>
+                <span>e.g. Sandton Commercial Law</span>
+              </div>
+            </button>
+
+            <button type="button" class="industry-btn" data-type="retail" onclick="selectIndustry('retail', this)">
+              <span class="ind-icon">🏬</span>
+              <div class="ind-info">
+                <strong>Boutique Store / Retail</strong>
+                <span>e.g. Rosebank Specialty Goods</span>
+              </div>
+            </button>
+          </div>
+
+          <div class="step-actions mt-6">
+            <button type="button" class="btn btn-secondary" onclick="goToAuditStep(1)">← Back to Step 1</button>
+            <button type="button" class="btn btn-primary" onclick="runStep3Scan()">Generate Step 3 Instant Visual Audit →</button>
+          </div>
+        </div>
+
+        <!-- STEP 3 CONTENT -->
+        <div id="audit-step-3" class="audit-step-panel hidden">
+          
+          <!-- Scanning State -->
+          <div id="step3-loading" class="audit-loading">
+            <div class="spinner"></div>
+            <h3 id="step3-scan-title">Auditing local search signals...</h3>
+            <p id="step3-scan-status" class="accent-color">Connecting to South African Google Maps cluster...</p>
+            <div class="progress-bar-wrap">
+              <div id="step3-progress-bar" class="progress-bar"></div>
+            </div>
+          </div>
+
+          <!-- Step 3 Diagnostic Breakdown Cards -->
+          <div id="step3-results" class="hidden">
+            <div class="result-header-card">
+              <div>
+                <span class="badge-pill">Diagnostic Ready • SA Geo-Radius</span>
+                <h3 id="step3-display-name" class="result-title">Gauteng Auto Works (Sandton, Johannesburg)</h3>
+                <p id="step3-display-sub" class="text-muted">Category: <span class="accent-color font-bold">Auto Shop / Panel Beater</span> • 3-Pack Opportunity: <span class="text-success font-bold">+280% Inbound Calls</span></p>
+              </div>
+              <div class="header-btns">
+                <button type="button" class="btn btn-secondary btn-sm" onclick="goToAuditStep(1)">🔄 Re-scan Suburb</button>
+              </div>
+            </div>
+
+            <!-- THE 3 MOCK STATUS CARDS -->
+            <div class="grid-3 diagnostic-cards-grid my-6">
+              
+              <!-- CARD 1: Google Maps 3-Pack Score -->
+              <div class="card status-card border-amber">
+                <div class="card-top">
+                  <span class="pillar-tag">Pillar 01</span>
+                  <span class="status-pill status-amber">Needs Expansion</span>
+                </div>
+                <h4>📍 Google Maps 3-Pack Score</h4>
+                <div class="score-display">
+                  <span class="score-big">62</span>
+                  <span class="score-total">/ 100</span>
+                </div>
+                <div class="progress-bar-wrap h-2">
+                  <div class="progress-bar bg-amber" style="width: 62%;"></div>
+                </div>
+                <div class="status-box">
+                  <strong class="text-amber">Ranking Status: Page 2 Drop-off</strong>
+                  <p>Your pin drops off significantly beyond 2.4km from physical address. Competitors take 74% of calls outside your immediate street.</p>
+                </div>
+                <div class="card-action-line">✓ Action: Deploy suburb geo-silos in your area</div>
+              </div>
+
+              <!-- CARD 2: Local NAP Citation Consistency -->
+              <div class="card status-card border-rose">
+                <div class="card-top">
+                  <span class="pillar-tag">Pillar 02</span>
+                  <span class="status-pill status-rose">Critical Sync Gap</span>
+                </div>
+                <h4>🏢 Local NAP Citation Consistency</h4>
+                <div class="status-huge text-rose">Needs Action</div>
+                <div class="directory-list">
+                  <div class="dir-item">
+                    <span>Brabys South Africa</span>
+                    <span class="dir-badge text-rose">Unverified</span>
+                  </div>
+                  <div class="dir-item">
+                    <span>Yellow Pages SA</span>
+                    <span class="dir-badge text-amber">Phone Mismatch</span>
+                  </div>
+                  <div class="dir-item">
+                    <span>Yalwa & Hotfrog SA</span>
+                    <span class="dir-badge text-rose">Missing Pin</span>
+                  </div>
+                </div>
+                <div class="card-action-line">✓ Action: Synchronize 40+ SA Tier-1 directories</div>
+              </div>
+
+              <!-- CARD 3: Review Velocity Target -->
+              <div class="card status-card border-emerald">
+                <div class="card-top">
+                  <span class="pillar-tag">Pillar 03</span>
+                  <span class="status-pill status-emerald">High Opportunity</span>
+                </div>
+                <h4>⭐ Review Velocity Target</h4>
+                <div class="status-huge text-emerald">+15 Reviews / Month</div>
+                <div class="velocity-box">
+                  <div class="flex-between font-sm">
+                    <span>Current Velocity:</span>
+                    <strong>1.4 reviews / mo</strong>
+                  </div>
+                  <div class="flex-between font-sm mt-1">
+                    <span>#1 Competitor Pace:</span>
+                    <strong class="text-emerald">12+ reviews / mo</strong>
+                  </div>
+                  <div class="progress-bar-wrap h-2 mt-2">
+                    <div class="progress-bar bg-emerald" style="width: 25%;"></div>
+                  </div>
+                </div>
+                <div class="card-action-line">✓ Action: Automated WhatsApp review funnel</div>
+              </div>
+
+            </div>
+
+            <!-- Conversion Action Box -->
+            <div class="cta-conversion-box">
+              <div>
+                <h4>Ready to fix these 3 bottlenecks and dominate your suburb?</h4>
+                <p>Get our complete South African 90-day Local 3-Pack domination blueprint.</p>
+              </div>
+              <div class="cta-btns">
+                <a href="#audit-section" class="btn btn-primary">Claim Full Suburb Fix Plan →</a>
+                <a href="https://wa.me/27825833674?text=Hi%20LocalForge,%20I'd%20like%20to%20audit%20my%20business" target="_blank" rel="noopener noreferrer" class="btn btn-whatsapp">
+                  <span class="wa-icon">💬</span>
+                  <span>Chat on WhatsApp</span>
+                </a>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Core Services Grid -->
+  <section id="services" class="section services-section">
+    <div class="container">
+      <div class="section-header">
+        <div class="badge-pill">⚡ High-Impact Systems</div>
+        <h2 class="section-title">Engineered for South African <span class="accent-color">Storefront Dominance</span></h2>
+        <p class="section-subtitle">Custom-built to capture nearby customers searching on smartphones and Google Maps across South Africa.</p>
+      </div>
+
+      <div class="grid-3">
+        <div class="card service-card">
+          <div class="service-icon">📍</div>
+          <span class="card-tag">Core Foundation</span>
+          <h3>Google Business Profile (GBP) Mastery</h3>
+          <p>Complete category hierarchy mapping, geo-tagged photo injection, keyword-rich service menus, and weekly Google Updates.</p>
+          <ul class="check-list">
+            <li>Primary & secondary category precision</li>
+            <li>Geo-tagged imagery with South African GPS metadata</li>
+            <li>Weekly keyword-optimized Google Posts</li>
+          </ul>
+        </div>
+
+        <div class="card service-card">
+          <div class="service-icon">🎯</div>
+          <span class="card-tag">Traffic Multiplier</span>
+          <h3>Local 3-Pack Proximity Expansion</h3>
+          <p>Expand your ranking radius from 1.5 km to 12+ km across your entire municipal metro with neighborhood silo signals.</p>
+          <ul class="check-list">
+            <li>Proximity grid radius tracking</li>
+            <li>Hyper-local suburb landing pages</li>
+            <li>Competitor rank displacement tactics</li>
+          </ul>
+        </div>
+
+        <div class="card service-card">
+          <div class="service-icon">💬</div>
+          <span class="card-tag">WhatsApp Integration</span>
+          <h3>Automated WhatsApp Review Engine</h3>
+          <p>Automated WhatsApp review requests after service, countertop NFC tap stands for checkout, and private negative review interceptors.</p>
+          <ul class="check-list">
+            <li>Automated WhatsApp review triggers</li>
+            <li>Countertop NFC tap & QR stands</li>
+            <li>Private negative review filter</li>
+          </ul>
+        </div>
+
+        <div class="card service-card">
+          <div class="service-icon">📚</div>
+          <span class="card-tag">Authority Signal</span>
+          <h3>SA Tier-1 Citation Sync (Brabys & YellowPages)</h3>
+          <p>Manual verification across Brabys, Yellow Pages SA, Yalwa, Apple Maps, Bing Places, and 40+ SA directories.</p>
+          <ul class="check-list">
+            <li>40+ authoritative SA directory sync</li>
+            <li>Rogue duplicate pin suppression</li>
+            <li>Direct data aggregator submission</li>
+          </ul>
+        </div>
+
+        <div class="card service-card">
+          <div class="service-icon">💻</div>
+          <span class="card-tag">Technical Edge</span>
+          <h3>Hyperlocal Schema & Geo-Silos (ZAR Marked)</h3>
+          <p>JSON-LD LocalBusiness structured data with ZAR currency markup, opening hours, and mobile click-to-WhatsApp conversions.</p>
+          <ul class="check-list">
+            <li>Full LocalBusiness JSON-LD Schema</li>
+            <li>Mobile click-to-call & WhatsApp speed</li>
+            <li>Suburb geographic schema silos</li>
+          </ul>
+        </div>
+
+        <div class="card service-card">
+          <div class="service-icon">🛡️</div>
+          <span class="card-tag">Unfair Advantage</span>
+          <h3>Single-Market Suburb Exclusivity</h3>
+          <p>We only work with ONE business per category per suburb. When we partner with your clinic or workshop, we lock out your competitors.</p>
+          <ul class="check-list">
+            <li>Guaranteed single-client territory lock</li>
+            <li>Zero conflict of interest</li>
+            <li>Dedicated South African SEO account director</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Interactive ROI Calculator (ZAR) -->
+  <section id="roi-calculator" class="section roi-section">
+    <div class="container">
+      <div class="section-header">
+        <div class="badge-pill">💰 South African Rand (ZAR) Profit Estimator</div>
+        <h2 class="section-title">Calculate Your <span class="accent-color">Local 3-Pack ROI</span></h2>
+        <p class="section-subtitle">See the revenue impact of ranking #1 on Google Maps in your suburb.</p>
+      </div>
+
+      <div class="roi-grid">
+        <div class="card roi-controls">
+          <div class="slider-group">
+            <div class="slider-header">
+              <span>Average Customer / Job Value (ZAR)</span>
+              <span id="ticket-val-display" class="accent-color font-bold">R1,200</span>
+            </div>
+            <input type="range" id="ticket-slider" min="150" max="15000" step="50" value="1200">
+          </div>
+
+          <div class="slider-group">
+            <div class="slider-header">
+              <span>Current Monthly Calls & Walk-ins</span>
+              <span id="calls-val-display" class="accent-color font-bold">40 calls</span>
+            </div>
+            <input type="range" id="calls-slider" min="10" max="250" step="5" value="40">
+          </div>
+
+          <div class="slider-group">
+            <div class="slider-header">
+              <span>Close / Conversion Rate (%)</span>
+              <span id="close-val-display" class="accent-color font-bold">35%</span>
+            </div>
+            <input type="range" id="close-slider" min="10" max="70" step="5" value="35">
+          </div>
+        </div>
+
+        <div class="card roi-display">
+          <div class="roi-hero">
+            <div class="roi-sub">Projected Added Annual Revenue</div>
+            <div id="annual-revenue-display" class="roi-huge">+ R302,400</div>
+          </div>
+          <div class="roi-breakdown-grid">
+            <div class="mini-stat">
+              <span class="mini-label">New Monthly Calls</span>
+              <span id="new-calls-display" class="mini-val">+60 calls</span>
+            </div>
+            <div class="mini-stat">
+              <span class="mini-label">New Monthly Gross</span>
+              <span id="new-monthly-display" class="mini-val">+ R25,200</span>
+            </div>
+          </div>
+          <a href="#audit-widget" class="btn btn-primary w-full">Audit My Growth Potential →</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Case Studies (South African Businesses) -->
+  <section id="case-studies" class="section case-section">
+    <div class="container">
+      <div class="section-header">
+        <div class="badge-pill">🏆 Proven South African Results</div>
+        <h2 class="section-title">Real Storefront <span class="accent-color">Case Studies</span></h2>
+      </div>
+
+      <div class="grid-3">
+        <div class="card case-card">
+          <div class="case-meta">Auto Repair & Panel Beaters • Johannesburg</div>
+          <h3>Gauteng Auto Works</h3>
+          <div class="metric-highlight">+275% High-Ticket Repair Jobs</div>
+          <p class="quote">"We went from 38 Google reviews to 290+ 5-star reviews using the WhatsApp review funnel. Our workshop bays in Sandton are fully booked 3 weeks in advance."</p>
+          <div class="author">— Johan Van Der Merwe, Managing Partner</div>
+        </div>
+
+        <div class="card case-card">
+          <div class="case-meta">Restaurant & Hospitality • Durban</div>
+          <h3>Coastal Coffee & Bistro</h3>
+          <div class="metric-highlight">+310% Weekend Walk-in Traffic</div>
+          <p class="quote">"Ranking #1 for 'best breakfast in Durban North' completely transformed our weekend foot traffic. We capture tourists and locals looking for artisanal food."</p>
+          <div class="author">— Priya Naidoo, Founder & Head Chef</div>
+        </div>
+
+        <div class="card case-card">
+          <div class="case-meta">Emergency Home Services • Johannesburg</div>
+          <h3>Sandton Emergency Plumbing</h3>
+          <div class="metric-highlight">+R180,000 New Monthly Revenue</div>
+          <p class="quote">"LocalForge expanded our Google 3-Pack radius across Sandton, Bryanston, and Rosebank. The phone rings non-stop for geyser bursts and repairs."</p>
+          <div class="author">— Sipho Dlamini, Operations Lead</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Detailed Audit Request Form Section -->
+  <section id="audit-section" class="section audit-section">
+    <div class="container">
+      <div class="section-header">
+        <div class="badge-pill">🔍 Full 100-Point Diagnostic</div>
+        <h2 class="section-title">Claim Your Comprehensive <span class="accent-color">Local SEO Audit</span></h2>
+        <p class="section-subtitle">Get a bespoke 100-point diagnostic scorecard and competitive breakdown for your suburb within 24 hours.</p>
+      </div>
+
+      <div class="card audit-card">
+        <form id="audit-form" class="audit-form-grid">
+          <div class="form-group">
+            <label for="fullName">Your Full Name *</label>
+            <input type="text" id="fullName" required placeholder="e.g. Dr. Sarah Jenkins / Johan">
+          </div>
+
+          <div class="form-group">
+            <label for="businessName">Business Name (Storefront) *</label>
+            <input type="text" id="businessName" required placeholder="e.g. Sandton Emergency Plumbing">
+          </div>
+
+          <div class="form-group">
+            <label for="cityState">Suburb / City (South Africa) *</label>
+            <input type="text" id="cityState" required placeholder="e.g. Sandton, Cape Town, Durban, Pretoria">
+          </div>
+
+          <div class="form-group">
+            <label for="category">Business Category *</label>
+            <select id="category">
+              <option value="Auto Shop / Panel Beater">Auto Repair & Panel Beater</option>
+              <option value="Plumbing & Home Services">Plumbing & Emergency Services</option>
+              <option value="Dental & Medical Practice">Dental & Medical Practice</option>
+              <option value="Restaurant & Hospitality">Restaurant & Coffee Shop</option>
+              <option value="Solar PV & Backup Power">Solar PV & Backup Power</option>
+              <option value="Salon & Wellness Spa">Salon & Wellness Spa</option>
+              <option value="Legal & Professional">Legal & Professional Services</option>
+              <option value="Other Storefront">Other Physical Storefront</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label for="email">Work Email *</label>
+            <input type="email" id="email" required placeholder="johan@gautengautoworks.co.za">
+          </div>
+
+          <div class="form-group">
+            <label for="phone">Contact / WhatsApp Phone Number *</label>
+            <input type="tel" id="phone" required placeholder="e.g. 082 123 4567 or +27 11 234 5678">
+          </div>
+
+          <div class="form-group span-full">
+            <label for="websiteUrl">Website URL or Google Maps Link</label>
+            <input type="text" id="websiteUrl" placeholder="https://sandtonplumbing.co.za or Google Maps pin link">
+          </div>
+
+          <div class="form-actions span-full">
+            <div class="trust-mini">🔒 100% Confidential • South African Exclusivity Guaranteed</div>
+            <div class="flex-actions-group">
+              <button type="submit" class="btn btn-primary btn-lg">Generate Full Diagnostic Audit →</button>
+              <a href="https://wa.me/27825833674?text=Hi%20LocalForge,%20I'd%20like%20to%20audit%20my%20business" target="_blank" rel="noopener noreferrer" class="btn btn-whatsapp btn-lg">
+                <span class="wa-icon">💬</span>
+                <span>Chat on WhatsApp</span>
+              </a>
+            </div>
+          </div>
+        </form>
+
+        <!-- Scanning State -->
+        <div id="audit-loading" class="audit-loading hidden">
+          <div class="spinner"></div>
+          <h3 id="scan-title">Auditing South African Search & Maps Signals...</h3>
+          <p id="scan-status" class="accent-color">Connecting to Google Maps South Africa cluster...</p>
+          <div class="progress-bar-wrap">
+            <div id="progress-bar" class="progress-bar"></div>
+          </div>
+        </div>
+
+        <!-- Audit Results Box -->
+        <div id="audit-results" class="audit-results hidden">
+          <div class="scorecard-header">
+            <div>
+              <span class="badge-pill">Audit Diagnostic Generated</span>
+              <h3 id="result-biz-name" class="result-title">Sandton Emergency Plumbing</h3>
+              <p id="result-summary" class="result-summary">Local 3-Pack Health Score analysis.</p>
+            </div>
+            <div class="score-badge">
+              <div class="score-grade" id="result-grade">D+</div>
+              <div class="score-num" id="result-score">58/100</div>
+            </div>
+          </div>
+
+          <div class="lost-calls-alert">
+            <span>🚨 Estimated <strong>42 lost calls/month</strong> to nearby 3-Pack competitors (≈ R48,000/mo missed revenue).</span>
+          </div>
+
+          <div class="checklist-results" id="checklist-container">
+            <!-- Populated via main.js -->
+          </div>
+
+          <div class="result-actions">
+            <button onclick="window.print()" class="btn btn-secondary">🖨️ Print / Save PDF</button>
+            <button id="reset-audit-btn" class="btn btn-secondary">🔄 New Audit</button>
+            <a href="https://wa.me/27825833674?text=Hi%20LocalForge,%20I'd%20like%20to%20fix%20my%20suburb%20ranking" target="_blank" rel="noopener noreferrer" class="btn btn-whatsapp">💬 Chat on WhatsApp</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Pricing in ZAR (South African Rand) -->
+  <section id="pricing" class="section pricing-section">
+    <div class="container">
+      <div class="section-header">
+        <div class="badge-pill">🇿🇦 South African Rand (ZAR) Plans</div>
+        <h2 class="section-title">Transparent Pricing with <span class="accent-color">Territory Exclusivity</span></h2>
+        <p class="section-subtitle">No long-term lock-in. Month-to-month service with single-category exclusivity in your suburb.</p>
+      </div>
+
+      <div class="grid-3">
+        <!-- Local Starter: R3,499/mo -->
+        <div class="card pricing-card">
+          <div class="plan-tag">Single Location</div>
+          <h3>Local Starter</h3>
+          <div class="price-box"><span class="price">R3,499</span><span class="period">/month</span></div>
+          <ul class="check-list">
+            <li>Google Business Profile Complete Overhaul</li>
+            <li>Top 25 SA Local Citations (Brabys, Yellow Pages)</li>
+            <li>Automated WhatsApp Review Funnel</li>
+            <li>1 Acrylic NFC/QR Countertop Stand</li>
+            <li>Monthly Suburb Geo-Grid Ranking Reports</li>
+          </ul>
+          <a href="#audit-widget" class="btn btn-secondary w-full">Claim Starter Package</a>
+        </div>
+
+        <!-- Business Growth (Most Popular): R6,999/mo -->
+        <div class="card pricing-card popular">
+          <div class="popular-ribbon">⭐ Most Popular</div>
+          <div class="plan-tag">High Growth Suburb</div>
+          <h3>Business Growth</h3>
+          <div class="price-box"><span class="price">R6,999</span><span class="period">/month</span></div>
+          <ul class="check-list">
+            <li>Everything in Starter, plus:</li>
+            <li>40+ SA Tier-1 Citations & Directory Sync</li>
+            <li>Google Maps Radius Expansion (8+ km)</li>
+            <li>Hyperlocal Schema & Suburb Geo-Silos</li>
+            <li>2 Acrylic NFC/QR Counter Stands</li>
+            <li>Dedicated South African SEO Director</li>
+          </ul>
+          <a href="#audit-widget" class="btn btn-primary w-full">Dominate Your Suburb →</a>
+        </div>
+
+        <!-- Market Leader: R12,999/mo -->
+        <div class="card pricing-card">
+          <div class="plan-tag">Multi-Unit / Metro</div>
+          <h3>Market Leader</h3>
+          <div class="price-box"><span class="price">R12,999</span><span class="period">/month</span></div>
+          <ul class="check-list">
+            <li>Multi-location profile synchronization</li>
+            <li>Metro-wide radius domination (15+ km)</li>
+            <li>Unlimited NFC/QR Counter Hardware</li>
+            <li>Direct CRM / POS Review API Integration</li>
+            <li>Strict Suburb Category Exclusivity</li>
+          </ul>
+          <a href="https://wa.me/27825833674?text=Hi%20LocalForge,%20I'm%20interested%20in%20the%20Market%20Leader%20plan" target="_blank" rel="noopener noreferrer" class="btn btn-secondary w-full">Inquire on WhatsApp</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section id="faq" class="section faq-section">
+    <div class="container max-w-md">
+      <div class="section-header">
+        <h2 class="section-title">Frequently Asked <span class="accent-color">Questions</span></h2>
+      </div>
+
+      <div class="faq-accordion">
+        <details class="faq-item" open>
+          <summary>How fast do South African businesses see Google Maps ranking improvements?</summary>
+          <p>Most South African clients experience noticeable increases in Google Maps impressions and inbound calls within 30 to 45 days. Full 3-pack dominance across adjacent suburbs typically solidifies between months 2 and 4.</p>
+        </details>
+
+        <details class="faq-item">
+          <summary>How does the automated WhatsApp review funnel work?</summary>
+          <p>Because South African customers live on WhatsApp, we provide custom smart QR/NFC counter stands and automated WhatsApp message prompts that send satisfied customers directly to your Google review link with zero friction.</p>
+        </details>
+
+        <details class="faq-item">
+          <summary>What is your Single-Market Exclusivity guarantee?</summary>
+          <p>We partner with only ONE business per industry category per designated geographic suburb (e.g. only one plumber in Sandton, only one dental practice in Menlyn) to guarantee zero conflict of interest.</p>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <!-- Sticky Floating WhatsApp Button in Bottom-Right -->
+  <div class="sticky-whatsapp-widget" id="whatsapp-widget">
+    <a href="https://wa.me/27825833674?text=Hi%20LocalForge,%20I'd%20like%20to%20audit%20my%20business" target="_blank" rel="noopener noreferrer" class="whatsapp-floating-btn" title="Chat on WhatsApp with LocalForge">
+      <span class="wa-float-icon">💬</span>
+      <span class="wa-float-text">Chat on WhatsApp</span>
+    </a>
+  </div>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div>
+        <div class="brand-logo">
+          <div class="logo-icon">🔥</div>
+          <span class="brand-name">Local<span class="accent-color">Forge</span></span>
+        </div>
+        <p class="footer-desc">The local SEO and Google Maps growth agency dedicated exclusively to South African brick-and-mortar businesses.</p>
+        <p class="exclusivity">🛡️ Strict Single-Market Suburb Exclusivity</p>
+      </div>
+
+      <div>
+        <h4>Contact Desk</h4>
+        <p>📍 Sandton, Johannesburg, South Africa</p>
+        <p>📞 <a href="tel:+27825833674">+27 82 583 3674</a></p>
+        <p>💬 <a href="https://wa.me/27825833674?text=Hi%20LocalForge,%20I'd%20like%20to%20audit%20my%20business" target="_blank" rel="noopener noreferrer">WhatsApp Support</a></p>
+        <p>✉️ <a href="mailto:hello@localforge.co.za">hello@localforge.co.za</a></p>
+      </div>
+
+      <div>
+        <h4>Quick Links</h4>
+        <ul class="footer-links">
+          <li><a href="#audit-widget">3-Step Instant Audit</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#roi-calculator">ZAR ROI Calculator</a></li>
+          <li><a href="#pricing">ZAR Pricing</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="container footer-bottom">
+      <p>&copy; 2026 LocalForge Agency. All rights reserved. South Africa.</p>
+    </div>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+  </html>
